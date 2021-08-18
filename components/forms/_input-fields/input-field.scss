@@ -167,3 +167,15 @@
     }
   }
 }
+.msds-fieldset {
+  /* Default fieldset style on Chrome without borders */
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35rem;
+  padding-inline-start: 0.75rem;
+  padding-inline-end: 0.75rem;
+  padding-block-end: 0.625rem;
+  min-inline-size: min-content;
+  border: none;
+}
