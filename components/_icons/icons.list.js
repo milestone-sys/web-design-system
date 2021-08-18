@@ -954,6 +954,11 @@ export const richIcons = [
     previewValue: 'msds-add-solution'
   },
   {
+    name: 'Advocacy',
+    value: '/Static/svg/richIcons/advocacy.svg',
+    previewValue: 'msds-advocacy'
+  },
+  {
     name: 'Airplane',
     value: '/Static/svg/richIcons/airplane.svg',
     previewValue: 'msds-airplane'
@@ -1254,6 +1259,11 @@ export const richIcons = [
     previewValue: 'msds-end-user'
   },
   {
+    name: 'Expertise',
+    value: '/Static/svg/richIcons/expertise.svg',
+    previewValue: 'msds-expertise'
+  },
+  {
     name: 'Explore',
     value: '/Static/svg/richIcons/explore.svg',
     previewValue: 'msds-explore'
@@ -1472,6 +1482,11 @@ export const richIcons = [
     name: 'Open Platform Community',
     value: '/Static/svg/richIcons/open-platform-community.svg',
     previewValue: 'msds-open-platform-community'
+  },
+  {
+    name: 'Passion',
+    value: '/Static/svg/richIcons/passion.svg',
+    previewValue: 'msds-passion'
   },
   {
     name: 'Partnership',
