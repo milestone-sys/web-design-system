@@ -15,6 +15,11 @@
   height: map-get(map-get($sprite-sizes, 'add-solution'), 'height');
   width: map-get(map-get($sprite-sizes, 'add-solution'), 'width');
 }
+.msds-advocacy {
+  @include sprite('advocacy');
+  height: map-get(map-get($sprite-sizes, 'advocacy'), 'height');
+  width: map-get(map-get($sprite-sizes, 'advocacy'), 'width');
+}
 .msds-airplane {
   @include sprite('airplane');
   height: map-get(map-get($sprite-sizes, 'airplane'), 'height');
@@ -325,6 +330,11 @@
   height: map-get(map-get($sprite-sizes, 'explore'), 'height');
   width: map-get(map-get($sprite-sizes, 'explore'), 'width');
 }
+.msds-expertise {
+  @include sprite('expertise');
+  height: map-get(map-get($sprite-sizes, 'expertise'), 'height');
+  width: map-get(map-get($sprite-sizes, 'expertise'), 'width');
+}
 .msds-extension {
   @include sprite('extension');
   height: map-get(map-get($sprite-sizes, 'extension'), 'height');
@@ -544,6 +554,11 @@
   @include sprite('partnership');
   height: map-get(map-get($sprite-sizes, 'partnership'), 'height');
   width: map-get(map-get($sprite-sizes, 'partnership'), 'width');
+}
+.msds-passion {
+  @include sprite('passion');
+  height: map-get(map-get($sprite-sizes, 'passion'), 'height');
+  width: map-get(map-get($sprite-sizes, 'passion'), 'width');
 }
 .msds-press-release {
   @include sprite('press-release');
