@@ -1,4 +1,5 @@
 .msds-text-area {
+  position: relative;
   &__text-input {
     font-family: 'Open Sans', sans-serif;
     resize: none;
@@ -141,8 +142,8 @@
 
   &__label {
     position: absolute;
-    top: calc(15% - 23px);
-    left: 31.2px;
+    top: 18px;
+    left: 20px;
     transition: 0.5s;
     pointer-events: none;
     color: $gray-8;
