@@ -1,7 +1,10 @@
 fontSizes = [
     { name: 'DISPLAY 1', value: 'msds-text-display-1' },
+    { name: 'DISPLAY 1 - REGULAR', value: 'msds-text-display-1-regular' },
     { name: 'DISPLAY 2', value: 'msds-text-display-2' },
+    { name: 'DISPLAY 2 - REGULAR', value: 'msds-text-display-2-regular' },
     { name: 'DISPLAY 3', value: 'msds-text-display-3' },
+    { name: 'DISPLAY 3 - REGULAR', value: 'msds-text-display-3-regular' },
     
     { name: 'Header 1 - Light', value: 'msds-text-header-1' },
     { name: 'Header 1 - Bold', value: 'msds-text-header-1-bold' },
