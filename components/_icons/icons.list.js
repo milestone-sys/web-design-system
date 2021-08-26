@@ -1,5 +1,10 @@
 export const flatIcons = [
   {
+    name: 'Air Quality Control',
+    value: '/Static/dist/msds-spritemap.svg#air-quality-control',
+    previewValue: '#air-quality-control'
+  },
+  {
     name: 'Access Control',
     value: '/Static/dist/msds-spritemap.svg#access-control',
     previewValue: '#access-control'
