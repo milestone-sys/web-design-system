@@ -1,0 +1,66 @@
+.msds-table {
+  width: 100%;
+  border-spacing: 0px;
+  @extend .msds-text-gray-10;
+
+  &__header-row {
+    background-color: #ebeff2;
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+    @extend .msds-text-header-5;
+    @extend .msds-text-transform-uppercase;
+  }
+
+  // span {
+  //   height: 96px;
+  // }
+
+  &__header {
+    text-align: left;
+    cursor: pointer;
+    @extend .msds-text-transform-uppercase;
+  }
+
+  &__header-headline {
+    display: flex;
+    align-items: center;
+  }
+
+  &__header-headline,
+  &__body-row-data {
+    padding: 20px 35px;
+  }
+
+  &__body-row-data {
+    background-color: #f5f6f7;
+    box-shadow: inset 0 -1px 0 0 #ffffff;
+  }
+
+  tr {
+    width: 100%;
+  }
+
+  // td {
+  //   width: 100%;
+  // }
+
+  &__header-order-icon {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  &__header-descending-order-icon,
+  &__header-acesnding-order-icon {
+    width: 12px;
+    height: 12px;
+    fill: $clear-blue;
+  }
+
+  &__header-descending-order-icon {
+    transform: rotate(-90deg);
+  }
+
+  &__header-acesnding-order-icon {
+    transform: rotate(90deg);
+  }
+}
