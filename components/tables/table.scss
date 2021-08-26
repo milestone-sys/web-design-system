@@ -3,16 +3,12 @@
   border-spacing: 0px;
   @extend .msds-text-gray-10;
 
-  &__header-row {
-    background-color: #ebeff2;
-    box-shadow: inset 0 -1px 0 0 #ffffff;
+  &__header {
+    background-color: $gray-3;
+    box-shadow: inset 0 -1px 0 0 $white;
     @extend .msds-text-header-5;
     @extend .msds-text-transform-uppercase;
   }
-
-  // span {
-  //   height: 96px;
-  // }
 
   &__header {
     text-align: left;
@@ -29,19 +25,6 @@
   &__body-row-data {
     padding: 20px 35px;
   }
-
-  &__body-row-data {
-    background-color: #f5f6f7;
-    box-shadow: inset 0 -1px 0 0 #ffffff;
-  }
-
-  tr {
-    width: 100%;
-  }
-
-  // td {
-  //   width: 100%;
-  // }
 
   &__header-order-icon {
     display: inline-flex;
@@ -62,5 +45,44 @@
 
   &__header-acesnding-order-icon {
     transform: rotate(90deg);
+  }
+
+  &__body {
+    :hover {
+      background-color: $gray-3;
+      box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+  &__body-row {
+    background-color: $gray-2;
+    box-shadow: inset 0 -1px 0 0 $white;
+  }
+
+  &--dark {
+    .msds-table__header {
+      @extend .msds-text-white;
+      background-color: $clear-blue;
+      box-shadow: inset 0 -1px 0 0 $clear-blue;
+    }
+
+    .msds-table__header-descending-order-icon,
+    .msds-table__header-acesnding-order-icon {
+      fill: $yellow;
+    }
+  }
+
+  &--medium {
+    .msds-table__header-headline,
+    .msds-table__body-row-data {
+      padding: 20px 23px;
+    }
+  }
+
+  &--small {
+    .msds-table__header-headline,
+    .msds-table__body-row-data {
+      padding: 20px 15px;
+    }
   }
 }
