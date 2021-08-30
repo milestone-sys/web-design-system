@@ -118,6 +118,10 @@
       p {
         display: inline;
       }
+      .msds-checkbox__checkmark {
+        // Adjust position to compensate for vertical-align: bottom
+        top: 4px;
+      }
     }
   }
 }
