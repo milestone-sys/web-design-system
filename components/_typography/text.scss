@@ -10,7 +10,7 @@
   @if $font == 'display-1' {
     @include rfs(80);
     line-height: 88px;
-    letter-spacing: 1.12px;
+    letter-spacing: 1.2px;
 
     @include media-breakpoint-down(lg) {
       line-height: calc(38px + 4.2vw);
@@ -20,7 +20,7 @@
   @if $font == 'display-2' {
     @include rfs(56);
     line-height: 64px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.86px;
 
     @include media-breakpoint-down(lg) {
       line-height: calc(32px + 2.625vw);
@@ -175,6 +175,13 @@
   @extend .msds-text-transform-uppercase;
 }
 
+.msds-text-display-1-regular {
+  @include msds-font('display-1');
+  @include msds-font-superscript();
+  @extend .msds-font-weight-normal;
+  @extend .msds-text-transform-uppercase;
+}
+
 .msds-text-display-2 {
   @include msds-font('display-2');
   @include msds-font-superscript();
@@ -182,10 +189,24 @@
   @extend .msds-text-transform-uppercase;
 }
 
+.msds-text-display-2-regular {
+  @include msds-font('display-2');
+  @include msds-font-superscript();
+  @extend .msds-font-weight-normal;
+  @extend .msds-text-transform-uppercase;
+}
+
 .msds-text-display-3 {
   @include msds-font('display-3');
   @include msds-font-superscript();
   @extend .msds-font-weight-extrabold;
+  @extend .msds-text-transform-uppercase;
+}
+
+.msds-text-display-3-regular {
+  @include msds-font('display-3');
+  @include msds-font-superscript();
+  @extend .msds-font-weight-normal;
   @extend .msds-text-transform-uppercase;
 }
 

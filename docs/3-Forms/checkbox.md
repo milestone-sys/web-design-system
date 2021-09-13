@@ -32,6 +32,9 @@ They can be used in forms, filters, lists etc.
                 <li class="document__unordered-list-item">
                     <a class="msds-link" href="#readonly-state">Readonly State</a>
                 </li>
+                <li class="document__unordered-list-item">
+                    <a class="msds-link" href="#readonly-state">Inline</a>
+                </li>
             </ul>             
          </ul>    
     </div>    
@@ -104,4 +107,15 @@ In order to use the checkbox as read-only, you need to add the following to the 
 
 ```html
 {{render '@checkbox-readonly'}}
+```
+
+### Inline
+
+To render the checkbox and label as inline elements, add <code>.msds-checkbox-inline</code> to the checkbox.
+<div class="element-preview">
+  <div class="element-preview__inner">{{render '@checkbox-inline'}}</div>
+</div>
+
+```html
+{{render '@checkbox-inline'}}
 ```
