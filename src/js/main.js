@@ -12,13 +12,10 @@ import 'components/_modals/modal.js'
 import 'components/_modals/modal-manager.js'
 import 'components/button-cards/_category-card/category-card.js'
 import 'components/_Progress-Bar/progress-bar.js'
-import 'components/table/table.js'
 
 // To be removed as it is for MSDS documentation only ----
 import 'components/_expanding-components/accordion-initialization.js'
 import 'components/_expanding-components/section-initialization.js'
-import 'components/table/table-initialization.js' //REMOVE ONCE DOCUMENTATION IS COMPLETE
-// ----
 
 //Component imports for main solution
 import { SelectInput } from 'components/forms/_select-input/select-input.js'

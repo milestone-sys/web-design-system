@@ -1,9 +1,11 @@
 export const msdsTableComponent = function() {
   const expandingIcon = 'msds-table__body-row-data-expandable-icon'
   let expandingIconComponentsCollection
+  let expandandableRows
 
   const cacheDom = function() {
     expandingIconComponentsCollection = document.querySelectorAll('.' + expandingIcon)
+    expandandableRows = document.querySelectorAll('[data-expandable-child]')
   }
 
   const bindEvents = function() {
@@ -17,11 +19,12 @@ export const msdsTableComponent = function() {
     toggleExpandingRow(element.dataset.expandableParent)
   }
 
-  const toggleExpandingRow = function(expandableRow) {
-    const expandandableRows = document.querySelectorAll("[data-expandable-child='" + expandableRow + "']")
-    for (let i = 0; i < expandandableRows.length; i++) {
-      expandandableRows[i].classList.toggle('msds-table--body-row-expandable-visible')
-    }
+  const toggleExpandingRow = function(expandableParentRowNumber) {
+    ;[...expandandableRows].forEach(function(expandableChildRow) {
+      if (expandableChildRow.getAttribute('data-expandable-child') === expandableParentRowNumber) {
+        expandableChildRow.classList.toggle('msds-table--body-row-expandable-visible')
+      }
+    })
   }
 
   this.init = function() {

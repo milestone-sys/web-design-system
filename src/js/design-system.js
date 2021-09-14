@@ -1,14 +1,15 @@
 import 'core-js/stable'
 import './main.js'
 
-//JS files for documnetations
+//JS files for documnetation
+import 'components/_table/table.js'
 import 'components/_Progress-Bar/progress-bar-initialization.js'
 import 'components/forms/_select-input/select-input-initialization.js'
 import 'components/forms/_text-areas/text-area.js'
 import 'components/_expanding-components/accordion-initialization.js'
 import 'components/_expanding-components/section-initialization.js'
 import 'components/_modals/modal-initialization.js'
-import 'components/table/table-initialization.js'
+import 'components/_table/table-initialization.js'
 import 'components/_icons/flat-icons.js'
 import 'components/_icons/rich-icons.js'
 import 'components/_alert/alert.js'
