@@ -23,7 +23,7 @@
 
   &__header-headline,
   &__body-row-data {
-    padding: 20px 35px;
+    padding: 38px 17px;
   }
 
   &__header-order-icon {
@@ -83,14 +83,27 @@
   &--medium {
     .msds-table__header-headline,
     .msds-table__body-row-data {
-      padding: 20px 23px;
+      padding: 26px 17px;
     }
   }
 
   &--small {
     .msds-table__header-headline,
     .msds-table__body-row-data {
-      padding: 20px 15px;
+      padding: 8px 17px;
+    }
+  }
+
+  &--dark {
+    .msds-table__header {
+      color: $white;
+      background-color: $clear-blue;
+      box-shadow: inset 0 -1px 0 0 $clear-blue;
+    }
+
+    .msds-table__header-descending-order-icon,
+    .msds-table__header-acesnding-order-icon {
+      fill: $yellow;
     }
   }
 
