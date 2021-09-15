@@ -16,7 +16,6 @@ import 'components/_Progress-Bar/progress-bar.js'
 // To be removed as it is for MSDS documentation only ----
 import 'components/_expanding-components/accordion-initialization.js'
 import 'components/_expanding-components/section-initialization.js'
-// ----
 
 //Component imports for main solution
 import { SelectInput } from 'components/forms/_select-input/select-input.js'
