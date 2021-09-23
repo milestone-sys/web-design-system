@@ -70,6 +70,11 @@ export const flatIcons = [
     previewValue: '#mobility-trends-and-flows'
   },
   {
+    name: 'Multi Camera Search',
+    value: '/Static/dist/msds-spritemap.svg#multi-camera-search',
+    previewValue: '#multi-camera-search'
+  },
+  {
     name: 'Noise Management',
     value: '/Static/dist/msds-spritemap.svg#noise-management',
     previewValue: '#noise-management'
@@ -161,6 +166,11 @@ export const flatIcons = [
     previewValue: '#analytics'
   },
   {
+    name: 'Appearance Similarity',
+    value: '/Static/dist/msds-spritemap.svg#appearance-similarity',
+    previewValue: '#appearance-similarity'
+  },
+  {
     name: 'Application',
     value: '/Static/dist/msds-spritemap.svg#application',
     previewValue: '#application'
@@ -209,6 +219,11 @@ export const flatIcons = [
     name: 'Career',
     value: '/Static/dist/msds-spritemap.svg#career',
     previewValue: '#career'
+  },
+  {
+    name: 'Case Management',
+    value: '/Static/dist/msds-spritemap.svg#case-management',
+    previewValue: '#case-management'
   },
   {
     name: 'Certification',
@@ -276,6 +291,11 @@ export const flatIcons = [
     previewValue: '#demo'
   },
   {
+    name: 'Density And Speed Control',
+    value: '/Static/dist/msds-spritemap.svg#density-and-speed-control',
+    previewValue: '#density-and-speed-control'
+  },
+  {
     name: 'Deployment',
     value: '/Static/dist/msds-spritemap.svg#deployment',
     previewValue: '#deployment'
@@ -334,6 +354,26 @@ export const flatIcons = [
     name: 'Extend',
     value: '/Static/dist/msds-spritemap.svg#extend',
     previewValue: '#extend'
+  },
+  {
+    name: 'Face Mask Detection',
+    value: '/Static/dist/msds-spritemap.svg#face-mask-detection',
+    previewValue: '#face-mask-detection'
+  },
+  {
+    name: 'Face Recognition',
+    value: '/Static/dist/msds-spritemap.svg#face-recognition',
+    previewValue: '#face-recognition'
+  },
+  {
+    name: 'Filter Crossing',
+    value: '/Static/dist/msds-spritemap.svg#filter-crossing',
+    previewValue: '#filter-crossing'
+  },
+  {
+    name: 'Filter Tolerance',
+    value: '/Static/dist/msds-spritemap.svg#filter-tolerance',
+    previewValue: '#filter-tolerance'
   },
   {
     name: 'Filter',
@@ -581,6 +621,11 @@ export const flatIcons = [
     previewValue: '#project'
   },
   {
+    name: 'Proximity Identification',
+    value: '/Static/dist/msds-spritemap.svg#proximity-identification',
+    previewValue: '#proximity-identification'
+  },
+  {
     name: 'Publish',
     value: '/Static/dist/msds-spritemap.svg#publish',
     previewValue: '#publish'
@@ -681,6 +726,11 @@ export const flatIcons = [
     previewValue: '#solution'
   },
   {
+    name: 'Sort Control',
+    value: '/Static/dist/msds-spritemap.svg#sort-control',
+    previewValue: '#sort-control'
+  },
+  {
     name: 'Sound',
     value: '/Static/dist/msds-spritemap.svg#sound',
     previewValue: '#sound'
@@ -751,9 +801,19 @@ export const flatIcons = [
     previewValue: '#verification'
   },
   {
+    name: 'Video Synopsis',
+    value: '/Static/dist/msds-spritemap.svg#video-synopsis',
+    previewValue: '#video-synopsis'
+  },
+  {
     name: 'Video',
     value: '/Static/dist/msds-spritemap.svg#video',
     previewValue: '#video'
+  },
+  {
+    name: 'Visual Layers',
+    value: '/Static/dist/msds-spritemap.svg#visual-layers',
+    previewValue: '#visual-layers'
   },
   {
     name: 'Warning',
