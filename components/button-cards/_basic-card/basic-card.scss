@@ -90,7 +90,7 @@
 
   &__link {
     @extend .msds-text-body-1;
-    @extend .msds-font-weight-light;
+    @extend .msds-font-weight-bold;
     color: $clear-blue;
 
     &:hover {
