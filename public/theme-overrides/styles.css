@@ -317,7 +317,7 @@ pre {
 .Prose .element-preview {
   margin: 2em 0;
   padding: 1em;
-  background-color: #fff;
+  background-color: var(--milestone-color-white);
   background-image: linear-gradient(45deg, #eee 25%, transparent 25%),
     linear-gradient(-45deg, #eee 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #eee 75%),
     linear-gradient(-45deg, transparent 75%, #eee 75%);
@@ -342,15 +342,62 @@ pre {
 .Prose .element-preview-dark p,
 .Prose .element-preview-dark span,
 .Prose .element-preview-dark label {
-  color: #ffffff;
+  color: var(--milestone-color-white);
 }
 
 .Prose .lang-html pre {
   margin: 0;
 }
 
-.Prose ul>li {
+.Prose ul > li {
   list-style-type: unset;
+}
+
+.Prose table {
+  margin: unset;
+  font-size: unset;
+  font-feature-settings: unset;
+}
+
+.Prose .msds-table__body-row:nth-child(even) {
+  background-color: #f5f6f7;
+  box-shadow: inset 0 -0.0625rem 0 0 var(--milestone-color-white);
+}
+
+.Prose .msds-table--dark-theme .msds-table__body-row:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 -0.0625rem 0 0 rgb(255 255 255 / 10%);
+}
+
+.Prose .msds-table__body-row:hover {
+  background-color: #ebeff2;
+  box-shadow: inset 0 -0.0625rem 0 0 rgb(255 255 255 / 0%);
+}
+
+.Prose th {
+  background-color: #ebeff2;
+  border-bottom: unset;
+}
+
+.Prose td,
+.Prose th {
+  padding: unset;
+  text-align: unset;
+}
+
+.Prose .msds-table__header-headline,
+.Prose .msds-table__body-row-data {
+  padding: 38px 17px;
+}
+
+.Prose .msds-table--medium .msds-table__header-headline,
+.Prose .msds-table--medium .msds-table__body-row-data {
+  padding: 26px 17px;
+}
+
+.Prose .msds-table--small .msds-table__header-headline,
+.Prose .msds-table--small .msds-table__body-row-data {
+  padding: 8px 17px;
 }
 
 dl {

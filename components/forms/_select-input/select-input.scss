@@ -20,9 +20,6 @@
       font-size: 12px;
       letter-spacing: 0;
       line-height: 18px;
-      & ~ .msds-select-input__icon {
-        top: -54px;
-      }
     }
     &--no-selection {
       color: $gray-8;
@@ -46,13 +43,16 @@
   &__icon {
     position: absolute;
     height: 16px;
-    top: -44px;
+    width: 16px;
+    top: 50%;
     right: 16px;
     fill: $clear-blue;
     pointer-events: none;
     svg {
-      transform: rotate(90deg);
-      width: 16px;
+      transform: rotate(90deg) translateX(-50%);
+      vertical-align: top;
+      width: 100%;
+      height: 100%;
     }
   }
   &__validation-msg {

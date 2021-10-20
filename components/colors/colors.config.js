@@ -4,7 +4,7 @@ module.exports = {
     previewCss: `
       .color-square{
         width: 170px; 
-        height: 92px; 
+        height: 130px; 
         margin: 10px;
         display: flex;
         justify-content: center;
@@ -267,6 +267,24 @@ module.exports = {
       },
       {
         textColor: 'msds-text-white',
+        text: 'clear blue gradient reverse',
+        backgroundColor: 'msds-bg-clear-blue-gradient-reverse',
+        scssVarName: '$clear-blue-gradient-reverse'
+      },
+      {
+        textColor: 'msds-text-white',
+        text: 'dark blue gradient',
+        backgroundColor: 'msds-bg-dark-blue-gradient',
+        scssVarName: '$dark-blue-gradient'
+      },
+      {
+        textColor: 'msds-text-white',
+        text: 'dark blue gradient reverse',
+        backgroundColor: 'msds-bg-dark-blue-gradient-reverse',
+        scssVarName: '$dark-blue-gradient-reverse'
+      },
+      {
+        textColor: 'msds-text-white',
         text: 'dark blue gradient',
         backgroundColor: 'msds-bg-dark-blue-gradient',
         scssVarName: '$dark-blue-gradient'
@@ -276,6 +294,12 @@ module.exports = {
         text: 'mixed blue gradient',
         backgroundColor: 'msds-bg-mixed-blue-gradient',
         scssVarName: '$mixed-blue-gradient'
+      },
+      {
+        textColor: 'msds-text-white',
+        text: 'mixed blue gradient reverse',
+        backgroundColor: 'msds-bg-mixed-blue-gradient-reverse',
+        scssVarName: '$mixed-blue-gradient-reverse'
       },
       {
         textColor: 'msds-text-black',

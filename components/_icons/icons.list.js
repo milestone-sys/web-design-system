@@ -1,5 +1,161 @@
 export const flatIcons = [
   {
+    name: 'Air Quality Control',
+    value: '/Static/dist/msds-spritemap.svg#air-quality-control',
+    previewValue: '#air-quality-control'
+  },
+  {
+    name: 'Access Control',
+    value: '/Static/dist/msds-spritemap.svg#access-control',
+    previewValue: '#access-control'
+  },
+  {
+    name: 'Car Control And Pollution Reduction',
+    value: '/Static/dist/msds-spritemap.svg#car-control-and-pollution-reduction',
+    previewValue: '#car-control-and-pollution-reduction'
+  },
+  {
+    name: 'Crime Prevention',
+    value: '/Static/dist/msds-spritemap.svg#crime-prevention',
+    previewValue: '#crime-prevention'
+  },
+  {
+    name: 'Crisis and Incident Management',
+    value: '/Static/dist/msds-spritemap.svg#crisis-and-incident-management',
+    previewValue: '#crisis-and-incident-management'
+  },
+  {
+    name: 'Critical Infrastructure Management',
+    value: '/Static/dist/msds-spritemap.svg#critical-infrastructure-management',
+    previewValue: '#critical-infrastructure-management'
+  },
+  {
+    name: 'Crowd Management',
+    value: '/Static/dist/msds-spritemap.svg#crowd-management',
+    previewValue: '#crowd-management'
+  },
+  {
+    name: 'Direct and Inform People',
+    value: '/Static/dist/msds-spritemap.svg#direct-and-inform-people',
+    previewValue: '#direct-and-inform-people'
+  },
+  {
+    name: 'Emergency Preparedness',
+    value: '/Static/dist/msds-spritemap.svg#emergency-preparedness',
+    previewValue: '#emergency-preparedness'
+  },
+  {
+    name: 'Emergency Response',
+    value: '/Static/dist/msds-spritemap.svg#emergency-response',
+    previewValue: '#emergency-response'
+  },
+  {
+    name: 'Environmental Monitoring',
+    value: '/Static/dist/msds-spritemap.svg#environmental-monitoring',
+    previewValue: '#environmental-monitoring'
+  },
+  {
+    name: 'Event Management',
+    value: '/Static/dist/msds-spritemap.svg#event-management',
+    previewValue: '#event-management'
+  },
+  {
+    name: 'Intelligent Public Transport Planning',
+    value: '/Static/dist/msds-spritemap.svg#intelligent-public-transport-planning',
+    previewValue: '#intelligent-public-transport-planning'
+  },
+  {
+    name: 'Mobility Trends and Flows',
+    value: '/Static/dist/msds-spritemap.svg#mobility-trends-and-flows',
+    previewValue: '#mobility-trends-and-flows'
+  },
+  {
+    name: 'Multi Camera Search',
+    value: '/Static/dist/msds-spritemap.svg#multi-camera-search',
+    previewValue: '#multi-camera-search'
+  },
+  {
+    name: 'Noise Management',
+    value: '/Static/dist/msds-spritemap.svg#noise-management',
+    previewValue: '#noise-management'
+  },
+  {
+    name: 'Number Plate Recognition',
+    value: '/Static/dist/msds-spritemap.svg#number-plate-recognition',
+    previewValue: '#number-plate-recognition'
+  },
+  {
+    name: 'Pandemic Response',
+    value: '/Static/dist/msds-spritemap.svg#pandemic-response',
+    previewValue: '#pandemic-response'
+  },
+  {
+    name: 'Parking Management',
+    value: '/Static/dist/msds-spritemap.svg#parking-management',
+    previewValue: '#parking-management'
+  },
+  {
+    name: 'People Counting',
+    value: '/Static/dist/msds-spritemap.svg#people-counting',
+    previewValue: '#people-counting'
+  },
+  {
+    name: 'Post Incident Management',
+    value: '/Static/dist/msds-spritemap.svg#post-incident-management',
+    previewValue: '#post-incident-management'
+  },
+  {
+    name: 'Public Information',
+    value: '/Static/dist/msds-spritemap.svg#public-information',
+    previewValue: '#public-information'
+  },
+  {
+    name: 'Real Time Policing Monitoring',
+    value: '/Static/dist/msds-spritemap.svg#real-time-policing-monitoring',
+    previewValue: '#real-time-policing-monitoring'
+  },
+  {
+    name: 'Real Time Visualisation',
+    value: '/Static/dist/msds-spritemap.svg#real-time-visualisation',
+    previewValue: '#real-time-visualisation'
+  },
+  {
+    name: 'Resource Management',
+    value: '/Static/dist/msds-spritemap.svg#resource-management',
+    previewValue: '#resource-management'
+  },
+  {
+    name: 'Social Distancing',
+    value: '/Static/dist/msds-spritemap.svg#social-distancing',
+    previewValue: '#social-distancing'
+  },
+  {
+    name: 'Traffic and Road Monitoring',
+    value: '/Static/dist/msds-spritemap.svg#traffic-and-road-monitoring',
+    previewValue: '#traffic-and-road-monitoring'
+  },
+  {
+    name: 'Waste Management',
+    value: '/Static/dist/msds-spritemap.svg#waste-management',
+    previewValue: '#waste-management'
+  },
+  {
+    name: 'Water Level Detection',
+    value: '/Static/dist/msds-spritemap.svg#water-level-detection',
+    previewValue: '#water-level-detection'
+  },
+  {
+    name: 'Water Supply Management',
+    value: '/Static/dist/msds-spritemap.svg#water-supply-management',
+    previewValue: '#water-supply-management'
+  },
+  {
+    name: 'Weather Forecasting',
+    value: '/Static/dist/msds-spritemap.svg#weather-forecasting',
+    previewValue: '#weather-forecasting'
+  },
+
+  {
     name: 'Access',
     value: '/Static/dist/msds-spritemap.svg#access',
     previewValue: '#access'
@@ -8,6 +164,11 @@ export const flatIcons = [
     name: 'Analytics',
     value: '/Static/dist/msds-spritemap.svg#analytics',
     previewValue: '#analytics'
+  },
+  {
+    name: 'Appearance Similarity',
+    value: '/Static/dist/msds-spritemap.svg#appearance-similarity',
+    previewValue: '#appearance-similarity'
   },
   {
     name: 'Application',
@@ -58,6 +219,11 @@ export const flatIcons = [
     name: 'Career',
     value: '/Static/dist/msds-spritemap.svg#career',
     previewValue: '#career'
+  },
+  {
+    name: 'Case Management',
+    value: '/Static/dist/msds-spritemap.svg#case-management',
+    previewValue: '#case-management'
   },
   {
     name: 'Certification',
@@ -125,6 +291,11 @@ export const flatIcons = [
     previewValue: '#demo'
   },
   {
+    name: 'Density And Speed Control',
+    value: '/Static/dist/msds-spritemap.svg#density-and-speed-control',
+    previewValue: '#density-and-speed-control'
+  },
+  {
     name: 'Deployment',
     value: '/Static/dist/msds-spritemap.svg#deployment',
     previewValue: '#deployment'
@@ -183,6 +354,26 @@ export const flatIcons = [
     name: 'Extend',
     value: '/Static/dist/msds-spritemap.svg#extend',
     previewValue: '#extend'
+  },
+  {
+    name: 'Face Mask Detection',
+    value: '/Static/dist/msds-spritemap.svg#face-mask-detection',
+    previewValue: '#face-mask-detection'
+  },
+  {
+    name: 'Face Recognition',
+    value: '/Static/dist/msds-spritemap.svg#face-recognition',
+    previewValue: '#face-recognition'
+  },
+  {
+    name: 'Filter Crossing',
+    value: '/Static/dist/msds-spritemap.svg#filter-crossing',
+    previewValue: '#filter-crossing'
+  },
+  {
+    name: 'Filter Tolerance',
+    value: '/Static/dist/msds-spritemap.svg#filter-tolerance',
+    previewValue: '#filter-tolerance'
   },
   {
     name: 'Filter',
@@ -430,6 +621,11 @@ export const flatIcons = [
     previewValue: '#project'
   },
   {
+    name: 'Proximity Identification',
+    value: '/Static/dist/msds-spritemap.svg#proximity-identification',
+    previewValue: '#proximity-identification'
+  },
+  {
     name: 'Publish',
     value: '/Static/dist/msds-spritemap.svg#publish',
     previewValue: '#publish'
@@ -530,6 +726,11 @@ export const flatIcons = [
     previewValue: '#solution'
   },
   {
+    name: 'Sort Control',
+    value: '/Static/dist/msds-spritemap.svg#sort-control',
+    previewValue: '#sort-control'
+  },
+  {
     name: 'Sound',
     value: '/Static/dist/msds-spritemap.svg#sound',
     previewValue: '#sound'
@@ -600,9 +801,19 @@ export const flatIcons = [
     previewValue: '#verification'
   },
   {
+    name: 'Video Synopsis',
+    value: '/Static/dist/msds-spritemap.svg#video-synopsis',
+    previewValue: '#video-synopsis'
+  },
+  {
     name: 'Video',
     value: '/Static/dist/msds-spritemap.svg#video',
     previewValue: '#video'
+  },
+  {
+    name: 'Visual Layers',
+    value: '/Static/dist/msds-spritemap.svg#visual-layers',
+    previewValue: '#visual-layers'
   },
   {
     name: 'Warning',
@@ -639,7 +850,6 @@ export const flatIcons = [
     value: '/Static/dist/msds-spritemap.svg#xprotect-corporate',
     previewValue: '#xprotect-corporate'
   },
-
   {
     name: 'Marketplace Acs Biometrics',
     value: '/Static/dist/msds-spritemap.svg#marketplace-acs-biometrics',
@@ -954,6 +1164,11 @@ export const richIcons = [
     previewValue: 'msds-add-solution'
   },
   {
+    name: 'Advocacy',
+    value: '/Static/svg/richIcons/advocacy.svg',
+    previewValue: 'msds-advocacy'
+  },
+  {
     name: 'Airplane',
     value: '/Static/svg/richIcons/airplane.svg',
     previewValue: 'msds-airplane'
@@ -1254,6 +1469,11 @@ export const richIcons = [
     previewValue: 'msds-end-user'
   },
   {
+    name: 'Expertise',
+    value: '/Static/svg/richIcons/expertise.svg',
+    previewValue: 'msds-expertise'
+  },
+  {
     name: 'Explore',
     value: '/Static/svg/richIcons/explore.svg',
     previewValue: 'msds-explore'
@@ -1472,6 +1692,11 @@ export const richIcons = [
     name: 'Open Platform Community',
     value: '/Static/svg/richIcons/open-platform-community.svg',
     previewValue: 'msds-open-platform-community'
+  },
+  {
+    name: 'Passion',
+    value: '/Static/svg/richIcons/passion.svg',
+    previewValue: 'msds-passion'
   },
   {
     name: 'Partnership',
