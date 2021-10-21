@@ -390,6 +390,11 @@ pre {
   padding: 38px 17px;
 }
 
+.Prose .msds-table__body-row:hover {
+  background-color: #ebeff2;
+  box-shadow: inset 0 -0.0625rem 0 0 rgb(255 255 255 / 0%);
+}
+
 .Prose .msds-table--medium .msds-table__header-headline,
 .Prose .msds-table--medium .msds-table__body-row-data {
   padding: 26px 17px;
@@ -398,6 +403,11 @@ pre {
 .Prose .msds-table--small .msds-table__header-headline,
 .Prose .msds-table--small .msds-table__body-row-data {
   padding: 8px 17px;
+}
+
+.Prose .msds-table--dark-theme .msds-table__body-row:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -0.0625rem 0 0 rgb(255 255 255 / 0%);
 }
 
 dl {
