@@ -207,29 +207,3 @@ To use the "<i>Sand</i>" font color you need to use the "<b>msds-text-sand</b>" 
 <div class="element-preview">
   <div class="element-preview__inner">{{render '@msds-text-sand'}}</div>
 </div>
-
-<!-- 
-  { name: 'Milestone Clear Blue', value: 'msds-text-clear-blue' }, -> DONE
-  { name: 'Milestone Dark Blue', value: 'msds-text-dark-blue' },   -> DONE
-  { name: 'Milestone Yellow', value: 'msds-text-yellow' },         -> DONE
-  { name: 'Gray 1', value: 'msds-text-gray-1' },                   -> DONE
-  { name: 'Gray 2', value: 'msds-text-gray-1' },                   -> DONE
-  { name: 'Gray 3', value: 'msds-text-gray-3' },                   -> DONE
-  { name: 'Gray 4', value: 'msds-text-gray-4' },                   -> DONE
-  { name: 'Gray 5', value: 'msds-text-gray-5' },                   -> DONE
-  { name: 'Gray 6', value: 'msds-text-gray-6' },                   -> DONE
-  { name: 'Gray 7', value: 'msds-text-gray-7' },                   -> DONE
-  { name: 'Gray 8', value: 'msds-text-gray-8' },                   -> DONE
-  { name: 'Gray 9', value: 'msds-text-gray-9' },                   -> DONE
-  { name: 'Gray 10', value: 'msds-text-gray-10' },                 -> DONE
-  { name: 'White', value: 'msds-text-white' },                     -> DONE
-  { name: 'Black', value: 'msds-text-black' },                     -> DONE
-  { name: 'Alt Blue 1', value: 'msds-text-alt-blue-1' },           -> DONE
-  { name: 'Alt Blue 2', value: 'msds-text-alt-blue-2' },           -> DONE
-  { name: 'Alt Blue 3', value: 'msds-text-alt-blue-3' },           -> DONE
-  { name: 'Alt Yellow 1', value: 'msds-text-alt-yellow-1' },       -> DONE
-  { name: 'Alt Yellow 2', value: 'msds-text-alt-yellow-2' },       -> DONE
-  { name: 'Confirm Green', value: 'msds-text-confirm-green' },     -> DONE
-  { name: 'Danger Red 1', value: 'msds-text-danger-red-1' },
-  { name: 'Danger Red 2', value: 'msds-text-danger-red-2' },
-  { name: 'Sand', value: 'msds-text-sand' } -->
