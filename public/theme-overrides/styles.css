@@ -390,6 +390,11 @@ pre {
   padding: 38px 17px;
 }
 
+.Prose .msds-table__body-row:hover {
+  background-color: #ebeff2;
+  box-shadow: inset 0 -0.0625rem 0 0 rgb(255 255 255 / 0%);
+}
+
 .Prose .msds-table--medium .msds-table__header-headline,
 .Prose .msds-table--medium .msds-table__body-row-data {
   padding: 26px 17px;
@@ -398,6 +403,11 @@ pre {
 .Prose .msds-table--small .msds-table__header-headline,
 .Prose .msds-table--small .msds-table__body-row-data {
   padding: 8px 17px;
+}
+
+.Prose .msds-table--dark-theme .msds-table__body-row:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 -0.0625rem 0 0 rgb(255 255 255 / 0%);
 }
 
 dl {
@@ -688,7 +698,7 @@ button:focus {
   text-decoration: underline !important;
 }
 
-/* Spacing definitions ofr the documentation 
+/* Spacing definitions for the documentation 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .section-spacing {
   opacity: 0.8;        
@@ -783,4 +793,28 @@ button:focus {
     content: '40px';
     height: 40px;
   }
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Color definitions for the documentation 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.color-square{
+  width: 170px; 
+  height: 92px; 
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-transform: uppercase;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  flex-direction: column;
+} 
+.color-container{display: flex; flex-wrap: wrap}
+.variable-name{
+  font-size: 14px;
+  text-transform: initial;
+  font-weight: normal;
+  margin-top: 10px;
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
