@@ -28,11 +28,11 @@ Click on the provided links, if you would like to get more information about <a 
 <div class="row card-row">
   <div class="col-12 col-md-4">
     <div class="msds-category-card ">
-      <a class="msds-category-card__link" href="/docs/utilities/colors/font-colors">
+      <a class="msds-category-card__link" href="{{ path '/docs/utilities/colors/font-colors' }}">
         <div class="msds-category-card__header">
           <div class="msds-category-card__header-body">Font Colors</div>
           <div class="msds-category-card__header-icon-container">
-            <svg class="msds-category-card__header-icon"><use href="/msds-spritemap.svg#right-arrow"/></svg>
+              <svg class="msds-category-card__header-icon"><use href="{{ path '/msds-spritemap.svg#right-arrow' }}"/></svg>
           </div>
         </div>
         <div class="msds-category-card__content">
@@ -43,11 +43,11 @@ Click on the provided links, if you would like to get more information about <a 
   </div>
   <div class="col-12 col-md-4">
     <div class="msds-category-card ">
-      <a class="msds-category-card__link" href="/docs/utilities/colors/background-colors">
+      <a class="msds-category-card__link" href="{{ path '/docs/utilities/colors/background-colors' }}">
         <div class="msds-category-card__header">
           <div class="msds-category-card__header-body">Background Colors</div>
           <div class="msds-category-card__header-icon-container">
-            <svg class="msds-category-card__header-icon"><use href="/msds-spritemap.svg#right-arrow"/></svg>
+              <svg class="msds-category-card__header-icon"><use href="{{ path '/msds-spritemap.svg#right-arrow' }}"/></svg>
           </div>
         </div>
         <div class="msds-category-card__content">
