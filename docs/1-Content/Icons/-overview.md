@@ -6,11 +6,11 @@ title: Icons
 <div class="row card-row">
     <div class="col-12 col-md-4">
       <div class="msds-category-card ">
-        <a class="msds-category-card__link" href="/docs/content/icons/icons-flat" alt="msds-category-cards">
+        <a class="msds-category-card__link" href="{{ path '/docs/content/icons/icons-flat' }}" alt="msds-category-cards">
           <div class="msds-category-card__header">
             <div class="msds-category-card__header-body">Flat Icons</div>
             <div class="msds-category-card__header-icon-container">
-              <svg class="msds-category-card__header-icon"><use href="/msds-spritemap.svg#right-arrow"/></svg>
+              <svg class="msds-category-card__header-icon"><use href="{{ path '/msds-spritemap.svg#right-arrow' }}"/></svg>
             </div>
           </div>
           <div class="msds-category-card__content">
@@ -21,11 +21,11 @@ title: Icons
     </div>
     <div class="col-12 col-md-4">
       <div class="msds-category-card ">
-        <a class="msds-category-card__link" href="/docs/content/icons/icons-rich" alt="msds-category-cards">
+        <a class="msds-category-card__link" href="{{ path '/docs/content/icons/icons-rich' }}" alt="msds-category-cards">
           <div class="msds-category-card__header">
             <div class="msds-category-card__header-body">Rich Icons</div>
             <div class="msds-category-card__header-icon-container">
-              <svg class="msds-category-card__header-icon"><use href="/msds-spritemap.svg#right-arrow"/></svg>
+              <svg class="msds-category-card__header-icon"><use href="{{ path '/msds-spritemap.svg#right-arrow' }}"/></svg>
             </div>
           </div>
           <div class="msds-category-card__content">
