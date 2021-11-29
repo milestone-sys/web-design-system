@@ -9,7 +9,6 @@ window.addEventListener('load', function() {
 })
 
 function updateWordCount(element) {
-  console.log(element)
   const inputLength = element.value.length
   const wordCount = `${inputLength}`
   const countElement = element.parentNode.querySelector('.word-counter__current')
