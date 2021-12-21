@@ -721,6 +721,11 @@ export const flatIcons = [
     previewValue: '#software-integration'
   },
   {
+    name: 'Software Integrations',
+    value: '/Static/dist/msds-spritemap.svg#software-integrations',
+    previewValue: '#software-integrations'
+  },
+  {
     name: 'Software Operator',
     value: '/Static/dist/msds-spritemap.svg#software-operator',
     previewValue: '#software-operator'
