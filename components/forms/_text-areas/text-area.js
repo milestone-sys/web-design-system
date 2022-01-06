@@ -12,5 +12,7 @@ function updateWordCount(element) {
   const inputLength = element.value.length
   const wordCount = `${inputLength}`
   const countElement = element.parentNode.querySelector('.word-counter__current')
-  countElement.innerHTML = wordCount
+  if (countElement !== null) {
+    countElement.innerHTML = wordCount
+  } 
 }
