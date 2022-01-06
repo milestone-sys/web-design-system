@@ -40,6 +40,11 @@ export const flatIcons = [
     previewValue: '#direct-and-inform-people'
   },
   {
+    name: 'Digital Signature',
+    value: '/Static/dist/msds-spritemap.svg#digital-signature',
+    previewValue: '#digital-signature'
+  },
+  {
     name: 'Emergency Preparedness',
     value: '/Static/dist/msds-spritemap.svg#emergency-preparedness',
     previewValue: '#emergency-preparedness'
@@ -714,6 +719,11 @@ export const flatIcons = [
     name: 'Software Integration',
     value: '/Static/dist/msds-spritemap.svg#software-integration',
     previewValue: '#software-integration'
+  },
+  {
+    name: 'Software Integrations',
+    value: '/Static/dist/msds-spritemap.svg#software-integrations',
+    previewValue: '#software-integrations'
   },
   {
     name: 'Software Operator',
