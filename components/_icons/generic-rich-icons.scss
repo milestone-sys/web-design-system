@@ -340,6 +340,11 @@
   height: map-get(map-get($sprite-sizes, 'extension'), 'height');
   width: map-get(map-get($sprite-sizes, 'extension'), 'width');
 }
+.msds-failover {
+  @include sprite('failover');
+  height: map-get(map-get($sprite-sizes, 'failover'), 'height');
+  width: map-get(map-get($sprite-sizes, 'failover'), 'width');
+}
 .msds-faq {
   @include sprite('faq');
   height: map-get(map-get($sprite-sizes, 'faq'), 'height');

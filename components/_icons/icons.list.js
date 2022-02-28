@@ -1494,6 +1494,11 @@ export const richIcons = [
     previewValue: 'msds-extension'
   },
   {
+    name: 'Failover',
+    value: '/Static/svg/richIcons/failover.svg',
+    previewValue: 'msds-failover'
+  },
+  {
     name: 'Faq',
     value: '/Static/svg/richIcons/faq.svg',
     previewValue: 'msds-faq'
