@@ -15,21 +15,41 @@ Below you will find the different definitions and options for tab tiles
             <li class="document__unordered-list-item"> 
                  <a class="msds-link"href="#display-modal-on-load">Tabs with icons</a>
             </li>
-             <li class="document__unordered-list-item"> 
+            <li class="document__unordered-list-item"> 
                  <a class="msds-link"href="#display-modal-on-click-event">Disabled Tabs with Icons</a>
             </li>
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#display-modal-on-click-event"> Two Tabs with Icons</a>
+            </li>           
         </ul>
     </div>
 </div>
 
 ## Overview
 Tabs are containers of content, that can make navigation easier, by nesting related content
-Modals are visible, until the user closes the modal
 
 Tabs can be set up in different configurations, both with and without icons, aswell as disabled and sticky to the viewport top on scroll.
 ## Tabs with icons
 Tabs can have rich icons in them
 
 <div class="element-preview">
-  <div class="element-preview__inner">{{render '@tabs-tile-with-icons'}}</div>
+    <div class="element-preview__inner">{{render '@tab-tile-with-icons'}}</div>
 </div>
+
+## Disabled Tabs with Icons
+Tabs can be disabled, making them un interactive
+
+<div class="element-preview">
+    <div class="element-preview__inner">{{render '@tab-tiles-disabled-with-icons'}}</div>
+</div>
+
+## Two Tabs with Icons
+Tabs can be disabled, making them un interactive
+
+<div class="element-preview">
+    <div class="element-preview__inner">{{render '@tab-tile-two-tabs'}}</div>
+</div>
+
+
+
+
