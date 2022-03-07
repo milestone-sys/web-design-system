@@ -36,6 +36,9 @@ Tabs can have rich icons in them
     <div class="element-preview__inner">{{render '@tab-tile-with-icons'}}</div>
 </div>
 
+```html
+{{render '@tab-tile-with-icons'}}
+```
 ## Disabled Tabs with Icons
 Tabs can be disabled, making them un interactive
 
@@ -43,12 +46,20 @@ Tabs can be disabled, making them un interactive
     <div class="element-preview__inner">{{render '@tab-tiles-disabled-with-icons'}}</div>
 </div>
 
+```html
+{{render '@tab-tiles-disabled-with-icons'}}
+```
+
 ## Two Tabs with Icons
-Tabs can be disabled, making them un interactive
+Tabs can be expand to take of more space, if the tab section contains less than 6 tabs
 
 <div class="element-preview">
     <div class="element-preview__inner">{{render '@tab-tile-two-tabs'}}</div>
 </div>
+
+```html
+{{render '@tab-tile-two-tabs'}}
+```
 
 
 
