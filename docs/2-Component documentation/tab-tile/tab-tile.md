@@ -23,7 +23,10 @@ Below you will find the different definitions and options for tab tiles
             </li>  
             <li class="document__unordered-list-item"> 
                  <a class="msds-link"href="#display-modal-on-click-event">Tabs without Icons</a>
-            </li>           
+            </li>
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#display-modal-on-click-event">Sticky tabs</a>
+            </li>            
         </ul>
     </div>
 </div>
@@ -74,3 +77,19 @@ Tabs can also be rendered without icons
 ```html
 {{render '@tab-tile-without-icons'}}
 ```
+
+### Tabs without Icons also support the disabled modifier
+
+```html
+<div class="msds-tabs__tab msds-tabs__tab--disabled" data-index="1">
+    <div class="msds-tabs__tab-text">
+        placeholderHeading
+    </div>
+</div>
+```
+
+## Sticky tabs
+tabs can be sticky to the top of the container when it is hit by the viewport top
+
+{{render '@tab-tile-sticky-tabs'}}
+
