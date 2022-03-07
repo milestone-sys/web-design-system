@@ -19,7 +19,10 @@ Below you will find the different definitions and options for tab tiles
                  <a class="msds-link"href="#display-modal-on-click-event">Disabled Tabs with Icons</a>
             </li>
             <li class="document__unordered-list-item"> 
-                 <a class="msds-link"href="#display-modal-on-click-event"> Two Tabs with Icons</a>
+                 <a class="msds-link"href="#display-modal-on-click-event">Less Tabs with Icons</a>
+            </li>  
+            <li class="document__unordered-list-item"> 
+                 <a class="msds-link"href="#display-modal-on-click-event">Tabs without Icons</a>
             </li>           
         </ul>
     </div>
@@ -50,17 +53,24 @@ Tabs can be disabled, making them un interactive
 {{render '@tab-tiles-disabled-with-icons'}}
 ```
 
-## Two Tabs with Icons
-Tabs can be expand to take of more space, if the tab section contains less than 6 tabs
+## Less Tabs with Icons
+Tabs will expand to take of more space, if the tab section contains less than 6 tabs
+
+<div class="element-preview">
+    <div class="element-preview__inner">{{render '@tab-tile-four-tabs'}}</div>
+</div>
 
 <div class="element-preview">
     <div class="element-preview__inner">{{render '@tab-tile-two-tabs'}}</div>
 </div>
 
+## Tabs without Icons
+Tabs can also be rendered without icons
+
+<div class="element-preview">
+    <div class="element-preview__inner">{{render '@tab-tile-without-icons'}}</div>
+</div>
+
 ```html
-{{render '@tab-tile-two-tabs'}}
+{{render '@tab-tile-without-icons'}}
 ```
-
-
-
-
