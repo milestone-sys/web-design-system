@@ -23,7 +23,9 @@ function bindEvents() {
     }
   }
 
-  window.onscroll = setStickyTabsClass
+  if (stickyTabsContainers) {
+    window.onscroll = setStickyTabsClass
+  }
   document.body.onkeyup = setTabActiveOnEnterKey
 }
 
@@ -55,13 +57,10 @@ function setTabActive(clickedTab) {
   const contentContainers = tabContainer.parentElement.parentElement.querySelectorAll('.msds-tabs__content-container')
   const shownContent = tabContainer.parentElement.parentElement.querySelector('.msds-tabs__content-container--visible')
   const activeTab = tabContainer.querySelector('.' + activeTabClass)
-
   if (activeTab != null) {
     activeTab.classList.remove(activeTabClass)
   }
-
   clickedTab.classList.add(activeTabClass)
-
   if (shownContent != null) {
     shownContent.classList.remove('msds-tabs__content-container--visible')
   }
@@ -89,7 +88,6 @@ function setStickyTabsClass() {
     const stickyTabRow = stickyTabsContainer.querySelector('.msds-tabs__container')
     const tabContent = stickyTabsContainer.querySelector('.msds-tabs__content-container')
     const shouldAddStickyClass = hasElementHitTop(stickyTabRow, tabContent)
-
     if (shouldAddStickyClass) {
       stickyTabRow.classList.add('msds-tabs--sticky-tabs')
     } else {
@@ -104,7 +102,6 @@ function scrollToElement(tab) {
   const tabScrollLeft = tab.offsetLeft
   const elementWidth = tab.clientWidth
   const calcTabScrollPos = tabScrollLeft - containerWidth / 2 + elementWidth / 1.5
-
   const scrollOptions = {
     left: calcTabScrollPos,
     top: 0,
@@ -118,7 +115,6 @@ function scrollToElement(tab) {
 function hasElementHitTop(tabRow, contentElement) {
   const tabRowBounding = tabRow.getBoundingClientRect()
   const contentElementBounding = contentElement.getBoundingClientRect()
-
   if (tabRowBounding.top <= 0 && contentElementBounding.bottom >= 0) {
     contentElement.style.paddingTop = stickyTabContentTopPadding
     return true
@@ -130,7 +126,6 @@ function hasElementHitTop(tabRow, contentElement) {
 
 function ensureCardsContentMatchingHeights() {
   const cardRows = document.querySelectorAll('.card-row')
-
   cardRows.ensureCardContentsSameHeightWithinParent({
     subSelectors: ['.msds-category-card__header-body', '.msds-category-card__content-body']
   })
