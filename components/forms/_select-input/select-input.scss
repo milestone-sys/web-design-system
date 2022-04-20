@@ -1,5 +1,6 @@
 .msds-select-input {
   position: relative;
+
   &__select {
     width: 100%;
     padding-left: 20px;
@@ -9,37 +10,47 @@
     font-size: 16px;
     border: 1px solid $gray-5;
     border-radius: 2px;
-    appearance: none; /* Remove default arrow */
+    appearance: none;
+    color: $gray-8;
+    /* Remove default arrow */
     cursor: pointer;
 
     &:checked {
       background-color: green !important;
     }
+
     &--small {
       height: 36px;
       font-size: 12px;
       letter-spacing: 0;
       line-height: 18px;
     }
+
     &--no-selection {
       color: $gray-8;
     }
+
     &:hover {
       background: $gray-2;
     }
+
     &:focus {
       box-shadow: 0 0 0 4px rgba(0, 153, 218, 0.5);
       border: 1px solid $clear-blue;
     }
+
     option {
       font-size: 14px;
       padding-top: 20px;
       padding-bottom: 20px;
+      color: $gray-8;
+
       &:disabled {
         color: $gray-8;
       }
     }
   }
+
   &__icon {
     position: absolute;
     height: 16px;
@@ -48,6 +59,7 @@
     right: 16px;
     fill: $clear-blue;
     pointer-events: none;
+
     svg {
       transform: rotate(90deg) translateX(-50%);
       vertical-align: top;
@@ -55,16 +67,19 @@
       height: 100%;
     }
   }
+
   &__validation-msg {
     display: none;
     display: none;
     @extend .msds-text-body-3;
     margin-left: 3px;
     margin-top: 10px;
+
     &--display {
       display: block;
     }
   }
+
   &--open {
     .msds-select-input__icon {
       svg {
@@ -72,9 +87,11 @@
       }
     }
   }
+
   &.msds-input--error {
     .msds-select-input__select {
       border: 1px solid $danger-red-1;
+
       &:focus {
         outline: 4px solid rgba(255, 40, 90, 0.5);
         border: 1px solid $danger-red-2;

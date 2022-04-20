@@ -14,5 +14,5 @@ function updateWordCount(element) {
   const countElement = element.parentNode.querySelector('.word-counter__current')
   if (countElement !== null) {
     countElement.innerHTML = wordCount
-  } 
+  }
 }
