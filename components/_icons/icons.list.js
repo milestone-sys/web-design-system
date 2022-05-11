@@ -159,7 +159,6 @@ export const flatIcons = [
     value: '/Static/dist/msds-spritemap.svg#weather-forecasting',
     previewValue: '#weather-forecasting'
   },
-
   {
     name: 'Access',
     value: '/Static/dist/msds-spritemap.svg#access',
@@ -2098,6 +2097,21 @@ export const richIcons = [
     value: '/Static/svg/richIcons/mind-at-ease.svg',
     previewValue: 'msds-mind-at-ease'
   },
+  {
+    name: 'AI bridge',
+    value: '/Static/svg/richIcons/ai-bridge.svg',
+    previewValue: 'msds-ai-bridge',
+  },
+  {
+    name: 'Driver framework',
+    value: '/Static/svg/richIcons/driver-framework.svg',
+    previewValue: 'msds-driver-framework',
+  },
+  {
+    name: 'VPS',
+    value:'/Static/svg/richIcons/vps.svg',
+    previewValue: 'msds-vps',
+  },
   ////////////////////////////////////////
   {
     name: 'Marketplace Challenges Assist People Feel Safe Leaving',
@@ -2394,5 +2408,25 @@ export const richIcons = [
     name: 'Marketplace Solution Service',
     value: '/Static/svg/richIcons/marketplace-solution-service.svg',
     previewValue: 'msds-marketplace-solution-service'
-  }
+  },
+  {
+    name: 'Marketplace Collect',
+    value: '/Static/svg/richIcons/marketplace-collect.svg',
+    previewValue: 'msds-marketplace-collect',    
+  },
+  {
+    name: 'Marketplace Convert',
+    value: '/Static/svg/richIcons/marketplace-convert.svg',
+    previewValue: 'msds-marketplace-convert',
+  },
+  {
+    name: 'Marketplace See',
+    value: '/Static/svg/richIcons/marketplace-see.svg',
+    previewValue: 'msds-marketplace-see',
+  },
+  {
+    name: 'Marketplace Understanding data',
+    value: '/Static/svg/richIcons/marketplace-understanding-data.svg',
+    previewValue: 'msds-marketplace-understanding-data',
+  },
 ]
