@@ -959,6 +959,21 @@
   height: map-get(map-get($sprite-sizes, 'mind-at-ease'), 'height');
   width: map-get(map-get($sprite-sizes, 'mind-at-ease'), 'width');
 }
+.msds-ai-bridge {
+  @include sprite('ai-bridge');
+  height: map-get(map-get($sprite-sizes, 'ai-bridge'), 'height');
+  width: map-get(map-get($sprite-sizes, 'ai-bridge'), 'width');
+}
+.msds-driver-framework {
+  @include sprite('driver-framework');
+  height: map-get(map-get($sprite-sizes, 'driver-framework'), 'height');
+  width: map-get(map-get($sprite-sizes, 'driver-framework'), 'width');
+}
+.msds-vps {
+  @include sprite('vps');
+  height: map-get(map-get($sprite-sizes, 'vps'), 'height');
+  width: map-get(map-get($sprite-sizes, 'vps'), 'width');
+}
 
 // MARKETPLACE ICONS
 
