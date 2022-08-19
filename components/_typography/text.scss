@@ -172,42 +172,36 @@
   @include msds-font('display-1');
   @include msds-font-superscript();
   @extend .msds-font-weight-extrabold;
-  @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-display-1-regular {
   @include msds-font('display-1');
   @include msds-font-superscript();
   @extend .msds-font-weight-normal;
-  @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-display-2 {
   @include msds-font('display-2');
   @include msds-font-superscript();
   @extend .msds-font-weight-extrabold;
-  @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-display-2-regular {
   @include msds-font('display-2');
   @include msds-font-superscript();
   @extend .msds-font-weight-normal;
-  @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-display-3 {
   @include msds-font('display-3');
   @include msds-font-superscript();
   @extend .msds-font-weight-extrabold;
-  @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-display-3-regular {
   @include msds-font('display-3');
   @include msds-font-superscript();
   @extend .msds-font-weight-normal;
-  @extend .msds-text-transform-uppercase;
 }
 
 .msds-text-header-1 {
