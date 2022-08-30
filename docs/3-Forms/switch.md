@@ -23,9 +23,6 @@ They can be used in forms, filters, lists etc.
                     <a class="msds-link" href="#checked-state">Checked State</a>
                 </li>
                 <li class="document__unordered-list-item">
-                    <a class="msds-link" href="#focus-state">Focus State</a>
-                </li>             
-                <li class="document__unordered-list-item">
                     <a class="msds-link" href="#disabled-state">Disabled State</a>
                 </li>
                 <li class="document__unordered-list-item">
