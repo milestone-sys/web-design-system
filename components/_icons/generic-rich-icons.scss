@@ -959,6 +959,21 @@
   height: map-get(map-get($sprite-sizes, 'mind-at-ease'), 'height');
   width: map-get(map-get($sprite-sizes, 'mind-at-ease'), 'width');
 }
+.msds-ai-bridge {
+  @include sprite('ai-bridge');
+  height: map-get(map-get($sprite-sizes, 'ai-bridge'), 'height');
+  width: map-get(map-get($sprite-sizes, 'ai-bridge'), 'width');
+}
+.msds-driver-framework {
+  @include sprite('driver-framework');
+  height: map-get(map-get($sprite-sizes, 'driver-framework'), 'height');
+  width: map-get(map-get($sprite-sizes, 'driver-framework'), 'width');
+}
+.msds-vps {
+  @include sprite('vps');
+  height: map-get(map-get($sprite-sizes, 'vps'), 'height');
+  width: map-get(map-get($sprite-sizes, 'vps'), 'width');
+}
 
 // MARKETPLACE ICONS
 
@@ -1283,4 +1298,24 @@
   @include sprite('marketplace-solution-service');
   height: map-get(map-get($sprite-sizes, 'marketplace-solution-service'), 'height');
   width: map-get(map-get($sprite-sizes, 'marketplace-solution-service'), 'width');
+}
+.msds-marketplace-collect {
+  @include sprite('marketplace-collect');
+  height: map-get(map-get($sprite-sizes, 'marketplace-collect'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-collect'), 'width');
+}
+.msds-marketplace-convert {
+  @include sprite('marketplace-convert');
+  height: map-get(map-get($sprite-sizes, 'marketplace-convert'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-convert'), 'width');
+}
+.msds-marketplace-see {
+  @include sprite('marketplace-see');
+  height: map-get(map-get($sprite-sizes, 'marketplace-see'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-see'), 'width');
+}
+.msds-marketplace-understanding-data {
+  @include sprite('marketplace-understanding-data');
+  height: map-get(map-get($sprite-sizes, 'marketplace-understanding-data'), 'height');
+  width: map-get(map-get($sprite-sizes, 'marketplace-understanding-data'), 'width');
 }
