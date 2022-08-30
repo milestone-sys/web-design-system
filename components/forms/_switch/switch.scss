@@ -1,0 +1,98 @@
+.msds-switch {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 45px;
+
+  //slider container styling
+  &__slider {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    height: 12px;
+    border: 1px solid $gray-5;
+    transition: 0.3s;
+    border-radius: 12px;
+    cursor: pointer;
+
+    //slider ball styling
+    &:before {
+      position: absolute;
+      content: '';
+      width: 10px;
+      height: 10px;
+      left: 1px;
+      top: 0px;
+      background-color: $gray-7;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  &__checkbox {
+    height: 0;
+    width: 0;
+    opacity: 0;
+
+    &:disabled + .msds-switch__slider {
+      background: $gray-5;
+      box-shadow: inset 0px 1px 0px $gray-7;
+
+      &:before {
+        background: $white;
+      }
+    }
+  }
+
+  &__label {
+    color: $gray-10;
+    margin-left: 33.5px;
+  }
+
+  //animation - slider container
+  &__checkbox:checked + .msds-switch__slider {
+    background: $clear-blue-gradient-3;
+    border: 1px solid transparent;
+    box-shadow: inset 0px 1px 0px #0175a6;
+
+    //animation - slider ball
+    &:before {
+      background: $white;
+      transform: translatex(14px);
+    }
+  }
+
+  //focus state
+  &:focus,
+  &:active {
+    .msds-switch__slider {
+      outline: 0;
+      box-shadow: 0 0 0 3px rgba(0, 153, 218, 0.5);
+    }
+  }
+
+  //disabled state
+  &--disabled {
+    .msds-switch__slider {
+      box-shadow: none;
+    }
+
+    .msds-slider__label {
+      color: $gray-7;
+    }
+  }
+
+  &__checkbox {
+    &:disabled + .msds-switch__slider {
+      background: $gray-5;
+      box-shadow: inset 0px 1px 0px $gray-7;
+
+      &:before {
+        background: $white;
+      }
+    }
+  }
+}
