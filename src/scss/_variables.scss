@@ -58,6 +58,7 @@ $clear-blue-gradient-2: linear-gradient(90deg, $clear-blue 0%, rgba(0, 153, 218,
 $clear-blue-gradient-2-mobile: linear-gradient(90deg, $clear-blue 0%, rgba(0, 153, 218, 0.5) 100%);
 $clear-blue-gradient-2-reverse: linear-gradient(270deg, $clear-blue 0%, rgba(0, 153, 218, 0) 100%);
 $clear-blue-gradient-2-reverse-mobile: linear-gradient(270deg, $clear-blue 0%, rgba(0, 153, 218, 0.5) 100%);
+$clear-blue-gradient-3: linear-gradient(270deg, $clear-blue 0%, $alt-blue-2 100%);
 $dark-blue-gradient: linear-gradient(270deg, $alt-blue-3 0%, $dark-blue 100%);
 $dark-blue-gradient-reverse: linear-gradient(-90deg, $dark-blue 0%, $alt-blue-3 100%);
 $dark-blue-gradient-2: linear-gradient(90deg, $dark-blue 0%, rgba(2, 56, 82, 0) 100%);
