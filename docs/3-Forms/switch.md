@@ -34,7 +34,7 @@ They can be used in forms, filters, lists etc.
 </div>
 
 ## Overview
-Each Switch component is based on a global CSS class called "msds-Switch". It is important to include it first as it is the main CSS class. Without it, the UI of the component won't work.
+Each Switch component is based on a global CSS class called "msds-switch". It is important to include it first as it is the main CSS class. Without it, the UI of the component won't work.
 
 The Switch makes use of custom styling by replacing the default input element with a pseudo-element selector, yet it keeps the native "checked" boolean property to toggle its state on/off (or checked/unchecked).
 
