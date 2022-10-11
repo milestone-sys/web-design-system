@@ -33,6 +33,20 @@
         width: 100%;
       }
     }
+
+    &-rich-icon-container {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    &-rich-icon {
+      max-width: 173px;
+      max-height: 130px;
+    }
   }
 
   &__body {
