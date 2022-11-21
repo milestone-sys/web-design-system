@@ -35,7 +35,7 @@ a.msds-link:not(.msds-link--secondary) {
 .msds-bg-mixed-blue-gradient,
 .msds-bg-mixed-blue-gradient-reverse,
 .msds-bg-husky-dark-blue-gradient {
-  a:not(.msds-btn):not(.msds-link--secondary),
+  a:not(.msds-btn):not(.msds-link--secondary):not(.msds-generic-card__link):not(.msds-category-card__link):not(.msds-contact-card__link),
   a.msds-link:not(.msds-link--secondary) {
     @include msds-link($yellow);
   }
