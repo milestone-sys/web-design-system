@@ -1,0 +1,2336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../src/demo-img/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../rich-icons-bundle.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../theme-overrides/styles.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../main.css?cachebust=1.4.0" type="text/css">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.4.0" type="text/css">
+
+
+<title>Tables | Milestone Web Design System</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+    <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"></path>
+    </svg>
+    <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+    </svg>
+    </button>
+    <div class="flex-child-header-txt">
+        <a href="../../index.html" class="Header-title" data-pjax>
+            <img class="logo-test" src="../../src/demo-img/milestone-logo-white.png" alt="logo"></a>            
+        </a>
+        <h6 class="header-txt ">Digital Design System</h6>        
+    </div>
+    <div class="github-milestone-system">
+        <a class="github-milestonesys-design-system" href="https://github.com/milestone-sys/web-design-system" target="_blank">
+            <img class="git-icon" src="../../src/demo-img/giticon.png" alt="git icon"></a>               
+        </a>
+    </div>
+</div>
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Document">
+
+    <div class="Document-header">
+        
+        <h1 class="Document-title">Tables</h1>
+        
+
+
+        
+    </div>
+
+    <div class="Document-content">
+
+    
+
+<div class="Prose">
+
+
+
+    
+    
+    <p>Below you will find the different definitions and options to tables.</p>
+<h3 id="table-of-contents">Table of contents</h3>
+<div class="row">
+    <div class="col-6">
+      <ul class="document__unordered-list">
+            <li class="document__unordered-list-item">
+                <a  class="msds-link"href="#overview">Overview</a>
+            </li>
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                    <a  class="msds-link"href="#global-definition">Global Definition</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a  class="msds-link"href="#sizes">Sizes</a>
+                </li>
+                <ul class="document__unordered-list">
+                    <li class="document__unordered-list-item">
+                        <a  class="msds-link"href="#large">Large</a>
+                    </li>
+                    <li class="document__unordered-list-item">
+                        <a  class="msds-link"href="#medium">Medium</a>
+                    </li>
+                    <li class="document__unordered-list-item">
+                        <a  class="msds-link"href="#small">Small</a>
+                    </li>
+                </ul>
+            </ul>
+            <li class="document__unordered-list-item">
+                <a  class="msds-link"href="#default-table">Table Default</a>
+            </li>    
+            <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                    <a  class="msds-link"href="#default-table-with-dark-headers">Default Table With Dark Headers</a>
+                </li>
+                <li class="document__unordered-list-item">
+                    <a  class="msds-link"href="#tables-expandable-rows">Table With Expandable Rows</a>
+                </li>
+            </ul>
+            <li class="document__unordered-list-item">
+                <a  class="msds-link"href="#tables-dark-themed">Table Dark Themed</a>
+            </li>
+          <ul class="document__unordered-list">
+                <li class="document__unordered-list-item">
+                    <a  class="msds-link"href="#tables-dark-themed-expandable-rows">Table Dark Theme Expanding Rows</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+</div>
+
+<h2 id="overview">Overview</h2>
+<h3 id="global-definition">Global Definition</h3>
+<p>Tables are used to display tabular data for users. We recommend using third party libraries/frameworks when utalizing our tables, as we have not built tables to be functional in our design system. Instead we use our own markup and make use of the following libraries, when you would like to add functionality like pagination, search, sort etc.</p>
+<ul>
+<li><a href="https://github.com/fiduswriter/Simple-DataTables">Simple Tables (Vanilla JS)</a></li>
+<li><a href="https://vuejs.org/v2/examples/grid-component.html">Vue Table Component (Vue JS)</a></li>
+<li><a href="https://react-table.tanstack.com/">React Tables (React)</a></li>
+</ul>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                case number
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                subject
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                status
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                shared case
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                link
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                last mts update
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<h3 id="sizes">Sizes</h3>
+<p>Tables are setup to support 3 differnt sizes (Based on padding). Our default tables are large, followed by medium and small tables.</p>
+<h5 id="large">Large</h5>
+<p>To utalize large tables, use the components default class <code>msds-table</code>.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                case number
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                subject
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                status
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                shared case
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                link
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                last mts update
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<h5 id="medium">Medium</h5>
+<p>To utalize medium tables, add an additional modifier class to the components wrapper tag <code>msds-table <b>msds-table--medium</b></code>.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table msds-table--medium">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                case number
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                subject
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                status
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                shared case
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                last mts update
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<h5 id="small">Small</h5>
+<p>To utalize small tables, add an additional modifier class to the components wrapper tag <code>msds-table <b>msds-table--small</b></code>.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table msds-table--small">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              case number
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              subject
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              status
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              shared case
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              last mts update
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<h3 id="default-table">Default Table</h3>
+<p>To utalize tables from the design system, copy the markup below.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                case number
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                subject
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                status
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                shared case
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                link
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                last mts update
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__head"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__head-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                case number
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                subject
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                status
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                shared case
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                link
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                last mts update
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC374780<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>“Test 11”<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Awaiting MTS<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>8/1/2019 11:18:01 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC103913<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Test 4ward2SF - 1 email address<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Closed<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>1/1/0001 12:00:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC374780<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>“Test 11”<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Awaiting MTS<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>8/1/2019 11:18:01 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC103913<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Test 4ward2SF - 1 email address<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Closed<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>1/1/0001 12:00:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC374780<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>“Test 11”<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Awaiting MTS<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>8/1/2019 11:18:01 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC103913<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Test 4ward2SF - 1 email address<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Closed<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>1/1/0001 12:00:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h4 id="default-table-with-dark-headers">Default Table With Dark Headers</h4>
+<p>The light themed tables have an additional theme, where the headers of the table are blue instead of grey. To make use of this table, add an additional modifier class to the components wrapper tag <code>msds-table <b>msds-table--dark</b></code>.</p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table msds-table--dark">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              case number
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              subject
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              status
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              shared case
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class ="msds-table__header-headline">
+              last mts update
+              <span class="msds-table__header-order-icon">
+                <svg class="msds-table__header-descending-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+                <svg class="msds-table__header-acesnding-order-icon">
+                  <use href="../../msds-spritemap.svg#right-arrow" />
+                </svg>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+
+<h3 id="tables-expandable-rows">Tables Expandable Rows</h3>
+<p>Tables can have rows that are grouped together, that are hidden until the user expands the rows. </p>
+<div class="element-preview">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header"></th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                case number
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                subject
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                status
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                shared case
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                last mts update
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">
+              <svg class="msds-table__body-row-data-expandable-icon" data-expandable-parent="1">
+                <use href="../../msds-spritemap.svg#right-arrow" />
+              </svg>
+            </td>
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row msds-table__body-row-expandable" data-expandable-child="1">
+            <td class="msds-table__body-row-data"></td>
+            <td class="msds-table__body-row-data">MSC65463</td>
+            <td class="msds-table__body-row-data">“Test 13”</td>
+            <td class="msds-table__body-row-data">Comfirmed MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">9/10/2019 10:32:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row msds-table__body-row-expandable" data-expandable-child="1">
+            <td class="msds-table__body-row-data"></td>
+            <td class="msds-table__body-row-data">MSC546421</td>
+            <td class="msds-table__body-row-data">“Test 22"</td>
+            <td class="msds-table__body-row-data">Pending MTS</td>
+            <td class="msds-table__body-row-data">No</td>
+            <td class="msds-table__body-row-data">12/12/2020 5:12:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">
+              <svg class="msds-table__body-row-data-expandable-icon msds-table--body-row-data-expandable-icon-active" data-expandable-parent="2">
+                <use href="../../msds-spritemap.svg#right-arrow" />
+              </svg>
+            </td>
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row msds-table__body-row-expandable msds-table--body-row-expandable-visible" data-expandable-child="2">
+            <td class="msds-table__body-row-data"></td>
+            <td class="msds-table__body-row-data">MSC65463</td>
+            <td class="msds-table__body-row-data">“Test 13”</td>
+            <td class="msds-table__body-row-data">Comfirmed MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">9/10/2019 10:32:01 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"container"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"col-12"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">thead</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__head"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__head-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                case number
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                subject
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                status
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                shared case
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-headline"</span>&gt;</span>
+                last mts update
+                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-order-icon"</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-descending-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                  <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__header-acesnding-order-icon"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+                  <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data-expandable-icon"</span> <span class="hljs-attr">data-expandable-parent</span>=<span class="hljs-string">"1"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC374780<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>“Test 11”<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Awaiting MTS<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>8/1/2019 11:18:01 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row msds-table__body-row-expandable"</span> <span class="hljs-attr">data-expandable-child</span>=<span class="hljs-string">"1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC65463<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>“Test 13”<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Comfirmed MTS<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>9/10/2019 10:32:01 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row msds-table__body-row-expandable"</span> <span class="hljs-attr">data-expandable-child</span>=<span class="hljs-string">"1"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC546421<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>“Test 22"<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Pending MTS<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>No<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>12/12/2020 5:12:01 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-name">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data-expandable-icon msds-table--body-row-data-expandable-icon-active"</span> <span class="hljs-attr">data-expandable-parent</span>=<span class="hljs-string">"2"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"../../msds-spritemap.svg#right-arrow"</span> /&gt;</span>
+              <span class="hljs-tag">&lt;/<span class="hljs-name">svg</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC103913<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Test 4ward2SF - 1 email address<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Closed<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>1/1/0001 12:00:00 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">tr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row msds-table__body-row-expandable msds-table--body-row-expandable-visible"</span> <span class="hljs-attr">data-expandable-child</span>=<span class="hljs-string">"2"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>MSC65463<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>“Test 13”<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Comfirmed MTS<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>Yes<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">td</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"msds-table__body-row-data"</span>&gt;</span>9/10/2019 10:32:01 AM<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="tables-dark-themed">Tables Dark Themed</h3>
+<p>Tables come in a second layout theme called a dark theme. To make use of the dark theme,  add an additional modifier class to the components wrapper tag <code>msds-table <b>msds-table--dark-theme</b></code>.</p>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table msds-table--dark-theme">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                case number
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                subject
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                status
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                shared case
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>  
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                link
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                last mts update
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data"><a href="#">Link</a></td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<h3 id="tables-dark-themed-expandable-rows">Tables Dark Themed Expandable Rows</h3>
+<p>Dark themed tables can also make use of the expandable tables styling in a dark theme. To make use of dark themed expading rows, add an additional modifier class to the components wrapper tag <code>msds-table <b>msds-table--dark-theme</b></code>.</p>
+<div class="element-preview-dark">
+  <div class="element-preview__inner"><div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="msds-table msds-table--dark-theme">
+        <thead class="msds-table__head">
+          <tr class="msds-table__head-row">
+            <th class="msds-table__header"></th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                case number
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                subject
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                status
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                shared case
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+            <th class="msds-table__header">
+              <div class="msds-table__header-headline">
+                last mts update
+                <span class="msds-table__header-order-icon">
+                  <svg class="msds-table__header-descending-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                  <svg class="msds-table__header-acesnding-order-icon">
+                    <use href="../../msds-spritemap.svg#right-arrow" />
+                  </svg>
+                </span>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody class="msds-table__body">
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">
+              <svg class="msds-table__body-row-data-expandable-icon" data-expandable-parent="3">
+                <use href="../../msds-spritemap.svg#right-arrow" />
+              </svg>
+            </td>
+            <td class="msds-table__body-row-data">MSC374780</td>
+            <td class="msds-table__body-row-data">“Test 11”</td>
+            <td class="msds-table__body-row-data">Awaiting MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">8/1/2019 11:18:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row msds-table__body-row-expandable" data-expandable-child="3">
+            <td class="msds-table__body-row-data"></td>
+            <td class="msds-table__body-row-data">MSC65463</td>
+            <td class="msds-table__body-row-data">“Test 13”</td>
+            <td class="msds-table__body-row-data">Comfirmed MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">9/10/2019 10:32:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row msds-table__body-row-expandable" data-expandable-child="3">
+            <td class="msds-table__body-row-data"></td>
+            <td class="msds-table__body-row-data">MSC546421</td>
+            <td class="msds-table__body-row-data">“Test 22"</td>
+            <td class="msds-table__body-row-data">Pending MTS</td>
+            <td class="msds-table__body-row-data">No</td>
+            <td class="msds-table__body-row-data">12/12/2020 5:12:01 AM</td>
+          </tr>
+          <tr class="msds-table__body-row">
+            <td class="msds-table__body-row-data">
+              <svg class="msds-table__body-row-data-expandable-icon msds-table--body-row-data-expandable-icon-active" data-expandable-parent="4">
+                <use href="../../msds-spritemap.svg#right-arrow" />
+              </svg>
+            </td>
+            <td class="msds-table__body-row-data">MSC103913</td>
+            <td class="msds-table__body-row-data">Test 4ward2SF - 1 email address</td>
+            <td class="msds-table__body-row-data">Closed</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">1/1/0001 12:00:00 AM</td>
+          </tr>
+          <tr class="msds-table__body-row msds-table__body-row-expandable msds-table--body-row-expandable-visible" data-expandable-child="4">
+            <td class="msds-table__body-row-data"></td>
+            <td class="msds-table__body-row-data">MSC65463</td>
+            <td class="msds-table__body-row-data">“Test 13”</td>
+            <td class="msds-table__body-row-data">Comfirmed MTS</td>
+            <td class="msds-table__body-row-data">Yes</td>
+            <td class="msds-table__body-row-data">9/10/2019 10:32:01 AM</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div></div>
+</div>
+
+    
+
+
+</div>
+
+
+
+    </div>
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../components/detail/tab-tile.html" data-pjax>
+                <span>Tab Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+        
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <div class="Tree-header">
+        <h3 class="Tree-title">documentation</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-content">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-content-items">
+                Content
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-content-items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-icons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-icons-items">
+                Icons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-icons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/icons/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/icons/icons-flat.html" data-pjax>
+                <span>Icons Flat</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/icons/icons-rich.html" data-pjax>
+                <span>Icons Rich</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-typography">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-typography-items">
+                Typography
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-typography-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/font-colors.html" data-pjax>
+                <span>Font Colors</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/links.html" data-pjax>
+                <span>Links</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/lists.html" data-pjax>
+                <span>Lists</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../content/typography/text.html" data-pjax>
+                <span>Text</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-component-documentation">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-component-documentation-items">
+                Component Documentation
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-component-documentation-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="alerts.html" data-pjax>
+                <span>Alerts</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-buttons">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-buttons-items">
+                Buttons
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-buttons-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="buttons/buttons.html" data-pjax>
+                <span>Buttons</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="buttons/buttons-floating.html" data-pjax>
+                <span>Buttons Floating</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-cards">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-cards-items">
+                Cards
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-cards-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cards/basic-cards.html" data-pjax>
+                <span>Basic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cards/category-cards.html" data-pjax>
+                <span>Category Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cards/contact-cards.html" data-pjax>
+                <span>Contact Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cards/generic-cards.html" data-pjax>
+                <span>Generic Cards</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cards/solution-cards.html" data-pjax>
+                <span>Solution Cards</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-dividers">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-dividers-items">
+                Dividers
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-dividers-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dividers/dividers.html" data-pjax>
+                <span>Dividers</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-expanding-components">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-expanding-components-items">
+                Expanding Components
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-expanding-components-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="expanding-components/accordion.html" data-pjax>
+                <span>Accordion</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="expanding-components/section.html" data-pjax>
+                <span>Section</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="modal.html" data-pjax>
+                <span>Modal</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-popover">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-popover-items">
+                Popover
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-popover-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="popover/popover.html" data-pjax>
+                <span>Popover</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="progress-bar.html" data-pjax>
+                <span>Progress Bar</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Table</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-forms">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-forms-items">
+                Forms
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-forms-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/-overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/checkbox.html" data-pjax>
+                <span>Checkbox</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/drop-down-list.html" data-pjax>
+                <span>Drop Down List</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/input-field.html" data-pjax>
+                <span>Input Field</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/radio-button.html" data-pjax>
+                <span>Radio Button</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/switch.html" data-pjax>
+                <span>Switch</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../forms/text-area.html" data-pjax>
+                <span>Text Area</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-utilities">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-utilities-items">
+                Utilities
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-utilities-items">
+            
+            
+            
+            
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-docs-collection-colors">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-colors-items">
+                Colors
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-colors-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../utilities/colors/overview.html" data-pjax>
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../utilities/colors/font-colors.html" data-pjax>
+                <span>Font Colors</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../utilities/colors/background-colors.html" data-pjax>
+                <span>Background Colors</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../utilities/spacing.html" data-pjax>
+                <span>Spacing</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-guidelines-and-guides">
+            <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-guidelines-and-guides-items">
+                Guidelines And Guides
+            </button>
+            <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-guidelines-and-guides-items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/creating-a-new-release.html" data-pjax>
+                <span>Creating A New Release</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/css-and-scss-guidelines.html" data-pjax>
+                <span>Css And Scss Guidelines</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/git-cheat-sheet.html" data-pjax>
+                <span>Git Cheat Sheet</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../guidelines-and-guides/installation-and-usage.html" data-pjax>
+                <span>Installation And Usage</span>
+                
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.4.0"></script>
+
+<script src="../../design-system.js?cachebust=1.4.0"></script>
+
+
+
+</body>
+</html>
