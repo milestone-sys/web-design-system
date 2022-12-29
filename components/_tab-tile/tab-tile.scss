@@ -213,6 +213,7 @@
 
 .msds-tabs-other-content {
   height: 100vh;
+  overflow-y: scroll;
 }
 
 @include media-breakpoint-down(md) {
